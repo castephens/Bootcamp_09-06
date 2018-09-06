@@ -1,3 +1,4 @@
+
 def getSeqs(fastq_file):
 	#Parse a FASTQ for sequence identities and corresponding sequences
 	seqences = {}
@@ -38,4 +39,5 @@ def plotHistogram(hamm_dist):
 
 
 hamm_dist =[1,2,3,4,5,6,7,8,9,13,12,14,15,16,13,1,2,3,4,5,6,7,8,1,3,12,12,7,9,8,8,7,9,4,5,6,8,7,6,3,6,4,5,8,12,20]
+
 
