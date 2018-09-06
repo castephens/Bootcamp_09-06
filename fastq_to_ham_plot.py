@@ -1,50 +1,7 @@
-# Import a FASTQ file, calculate the hamming distances for each sequence,
-# and plot these distances in a way you think is useful.
-
-# Script must ultimately be contained in one fluid .py file merged via GitHub
-
-import matplotlib.pyplot as plt
-from collections import Counter
-import numpy as np
-
-#Variables
-xHammDist = 0 #All the hamming distances
-yFreq = 0 #Number of times each hamming distance repeats itself
-
-#f = open(CTGATC.fastq)
-
 def getSeqs(fastq_file):
 	#Parse a FASTQ for sequence identities and corresponding sequences
 	seqences = {}
 	return sequences
-
-def hamDist(str1, str2):
-   #Count the # of differences between equal length strings str1 and str
-   #str1list = list(str1)
-   #str2list = list(str2)
-   #diff = 0
-   #for i in range(1,len(str1list)+1):
-   #    if str1list[i]i == str2list[i]:
-   #        continue
-   #    else:
-   #        diff += 1
-   #return diff
-
-#Make some kind of plot that contains the data you've calculated.
-<<<<<<< HEAD
-#sequences = getSeqs(f)
-#total_diff = []
-#for index, string in sequences.items():
-#    for place, seq in sequences.items():                         
-#        if place  == index:
-#            continue
-#        if len(string) != len(seq):
-#            continue
-#        else:
-#            count_dif = hamDist(string,seq)
-#            total_diff.append(count_dif)
-
-=======
 
 def countHamm(hamm_dist):
     """ Counts number of times each Hamming distance appears by using Counter and dictionary, and makes x list (xHammDist) and y list (yOcurrences), returns these values"""
@@ -82,6 +39,3 @@ def plotHistogram(hamm_dist):
 
 hamm_dist =[1,2,3,4,5,6,7,8,9,13,12,14,15,16,13,1,2,3,4,5,6,7,8,1,3,12,12,7,9,8,8,7,9,4,5,6,8,7,6,3,6,4,5,8,12,20]
 
-
-plotHistogram(hamm_dist)
->>>>>>> 15487443aa6208aaa4bd0704711430751981855b
